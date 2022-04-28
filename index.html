@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Tasker</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Tasker</a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2" id="searchTxt"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container my-3">
+        <h1>Welcome to Tasker</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a Task</h5>
+                <div class="form-group">
+                    <input type="text" class="form-control my-2" placeholder="eg. Reading" name="addTask" id="addTask">
+                 </div>
+                <a href="#" id="addBtn" class="btn btn-primary my-2">Add</a>
+            </div>
+        </div>
+        <hr>
+        <h1>Your ToDo List</h1>
+        <hr>
+        <div id="todoList" class="row container-fluid"> 
+        </div>
+    </div> 
+
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
